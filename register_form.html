@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <form action="register.php" method="post" enctype="multipart/form-data">
+        <div class="container p-5 my-5 bg-dark text-white">
+            <legend align="center">Form Register</legend> <br>
+            <div class="mb-3">
+                <label for="exampleUsername" class="form-label">Username</label>
+                <input type="text" class="form-control form-control-lg" name="username" placeholder="Username">
+            </div>
+            <div class="mb-3">
+                <label for="examplePassword" class="form-label">Password</label>
+                <input type="password" class="form-control form-control-lg" name="password" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <label for="exampleLevel" class="form-label">Level</label>
+                <input type="text" class="form-control form-control-lg" name="level"
+                    placeholder="1 = Admin, 2 = Guest"><br>
+            </div>
+            <center>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary" name="register-btn" id="btn">Create</button><br><br>
+                    <a href="login_form.html">Already have account ?</a>
+                </div>
+            </center>
+        </div>
+    </form>
+</body>
+
+</html>
